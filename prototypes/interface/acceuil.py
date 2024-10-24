@@ -89,6 +89,14 @@ class AcceuilPage(QMainWindow):
         action_about = QAction(QIcon('info_icon.png'), 'À propos du logiciel', self)
         menu.addAction(action_about)
 
+        action_historique = QAction(QIcon('historic_icon.png'), 'Historique', self)
+        menu.addAction(action_historique)
+
+        # Option "Paramètres"
+        action_favorite = QAction(QIcon('favorite_icon.png'), 'Favoris', self)
+        menu.addAction(action_favorite)
+
+
         # Option "Sauvegarder l'image"
         action_save = QAction('Sauvegarder l\'image', self)
         action_save.triggered.connect(self.saveImage)
