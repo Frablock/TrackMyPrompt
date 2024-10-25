@@ -1,0 +1,1 @@
+python gifProcess.py ./Medias/animated.gif
