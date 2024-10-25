@@ -1,0 +1,1 @@
+python videoProcess.py ./Medias/video.mp4
