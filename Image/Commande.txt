@@ -1,1 +1,0 @@
-python imageProcess.py ./Medias/image.jpg
