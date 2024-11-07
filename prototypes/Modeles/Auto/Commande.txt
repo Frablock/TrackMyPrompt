@@ -1,3 +1,0 @@
-python processMedia.py ./Medias/image.jpg
-python processMedia.py ./Medias/video.mp4
-python processMedia.py ./Medias/animated.gif
