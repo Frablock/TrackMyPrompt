@@ -1,3 +1,0 @@
-python processMedia.py ./Medias/animated.gif "detect all the cat near the toilet and dog in the frame"
-python processMedia.py ./Medias/animated.gif "détecter tous les chats près des toilettes et les chiens dans le cadre"
-
