@@ -6,61 +6,28 @@ import sys
 
 # Dictionnaire des classes COCO en anglais et en français
 coco_classes = {
-    "person": ("personne", "personnes"), "bicycle": ("bicyclette", "bicyclettes"), 
-    "car": ("voiture", "voitures"), "motorcycle": ("moto", "motos"),
-    "airplane": ("avion", "avions"), "bus": ("autobus", "autobus"), 
-    "train": ("train", "trains"), "truck": ("camion", "camions"),
-    "boat": ("bateau", "bateaux"), "traffic light": ("feu de circulation", "feux de circulation"), 
-    "fire hydrant": ("robinet incendie", "robinets incendie"),
-    "stop sign": ("stop", "stops"), "parking meter": ("parcmètre", "parcmètres"), 
-    "bench": ("banc", "bancs"), "bird": ("oiseau", "oiseaux"),
-    "cat": ("chat", "chats"), "dog": ("chien", "chiens"), 
-    "horse": ("cheval", "chevaux"), "sheep": ("mouton", "moutons"), 
-    "cow": ("vache", "vaches"),
-    "elephant": ("éléphant", "éléphants"), "bear": ("ours", "ours"), 
-    "zebra": ("zèbre", "zèbres"), "giraffe": ("girafe", "girafes"),
-    "backpack": ("sac à dos", "sacs à dos"), "umbrella": ("parapluie", "parapluies"), 
-    "handbag": ("sac à main", "sacs à main"),
-    "tie": ("cravate", "cravates"), "suitcase": ("valise", "valises"), 
-    "frisbee": ("frisbee", "frisbees"),
-    "skis": ("skis", "skis"), "snowboard": ("planche de neige", "planches de neige"), 
-    "sports ball": ("ballon de sport", "ballons de sport"),
-    "kite": ("cerf-volant", "cerfs-volants"), "baseball bat": ("batte de baseball", "battes de baseball"),
-    "baseball glove": ("gant de baseball", "gants de baseball"), 
-    "skateboard": ("skateboard", "skateboards"),
-    "surfboard": ("planche de surf", "planches de surf"), 
-    "tennis racket": ("raquette de tennis", "raquettes de tennis"),
-    "bottle": ("bouteille", "bouteilles"), "wine glass": ("verre à vin", "verres à vin"), 
-    "cup": ("tasse", "tasses"),
-    "fork": ("fourchette", "fourchettes"), "knife": ("couteau", "couteaux"), 
-    "spoon": ("cuillère", "cuillères"),
-    "bowl": ("bol", "bols"), "banana": ("banane", "bananes"), 
-    "apple": ("pomme", "pommes"), "sandwich": ("sandwich", "sandwichs"),
-    "orange": ("orange", "oranges"), "broccoli": ("brocoli", "brocolis"), 
-    "carrot": ("carotte", "carottes"),
-    "hot dog": ("hot dog", "hot dogs"), "pizza": ("pizza", "pizzas"), 
-    "donut": ("beignet", "beignets"),
-    "cake": ("gâteau", "gâteaux"), "chair": ("chaise", "chaises"), 
-    "couch": ("canapé", "canapés"),
-    "potted plant": ("plante en pot", "plantes en pot"), 
-    "bed": ("lit", "lits"),
-    "dining table": ("table à manger", "tables à manger"), 
-    "toilet": ("toilette", "toilettes"),
-    "tv": ("télévision", "télévisions"), 
-    "laptop": ("ordinateur portable", "ordinateurs portables"),
-    "mouse": ("souris", "souris"), "remote": ("télécommande", "télécommandes"), 
-    "keyboard": ("clavier", "claviers"),
-    "cell phone": ("téléphone portable", "téléphones portables"), 
-    "microwave": ("micro-ondes", "micro-ondes"),
-    "oven": ("four", "fours"), "toaster": ("grille-pain", "grille-pains"), 
-    "sink": ("évier", "éviers"),
-    "refrigerator": ("réfrigérateur", "réfrigérateurs"), 
-    "book": ("livre", "livres"),
-    "clock": ("horloge", "horloges"), "vase": ("vase", "vases"), 
-    "scissors": ("ciseaux", "ciseaux"),
-    "teddy bear": ("ours en peluche", "ours en peluche"), 
-    "hair drier": ("sèche-cheveux", "sèche-cheveux"),
-    "toothbrush": ("brosse à dents", "brosses à dents")
+    "person": "personne", "bicycle": "bicyclette", "car": "voiture", "motorcycle": "moto",
+    "airplane": "avion", "bus": "autobus", "train": "train", "truck": "camion", 
+    "boat": "bateau", "traffic light": "feu de circulation", "fire hydrant": "robinet incendie", 
+    "stop sign": "stop", "parking meter": "parcmètre", "bench": "banc", "bird": "oiseau", 
+    "cat": "chat", "dog": "chien", "horse": "cheval", "sheep": "mouton", "cow": "vache", 
+    "elephant": "éléphant", "bear": "ours", "zebra": "zèbre", "giraffe": "girafe", 
+    "backpack": "sac à dos", "umbrella": "parapluie", "handbag": "sac à main", 
+    "tie": "cravate", "suitcase": "valise", "frisbee": "frisbee", "skis": "skis", 
+    "snowboard": "planche de neige", "sports ball": "ballon de sport", "kite": "cerf-volant", 
+    "baseball bat": "batte de baseball", "baseball glove": "gant de baseball", 
+    "skateboard": "skateboard", "surfboard": "plage de surf", "tennis racket": "raquette de tennis", 
+    "bottle": "bouteille", "wine glass": "verre à vin", "cup": "tasse", "fork": "fourchette", 
+    "knife": "couteau", "spoon": "cuillère", "bowl": "bol", "banana": "banane", 
+    "apple": "pomme", "sandwich": "sandwich", "orange": "orange", "broccoli": "brocoli", 
+    "carrot": "carotte", "hot dog": "hot dog", "pizza": "pizza", "donut": "beignet", 
+    "cake": "gâteau", "chair": "chaise", "couch": "canapé", "potted plant": "plante en pot", 
+    "bed": "lit", "dining table": "table à manger", "toilet": "toilette", "tv": "télévision", 
+    "laptop": "ordinateur portable", "mouse": "souris", "remote": "télécommande", 
+    "keyboard": "clavier", "cell phone": "téléphone portable", "microwave": "micro-ondes", 
+    "oven": "four", "toaster": "grille-pain", "sink": "évier", "refrigerator": "réfrigérateur", 
+    "book": "livre", "clock": "horloge", "vase": "vase", "scissors": "ciseaux", 
+    "teddy bear": "ours en peluche", "hair drier": "sèche-cheveux", "toothbrush": "brosse à dents"
 }
 
 # Fonction pour extraire les classes cibles à partir de la phrase d'entrée
@@ -82,7 +49,9 @@ def get_object_name(obj_name, input_text):
     return coco_classes.get(obj_name, obj_name) if is_french(input_text) else obj_name  # Retourne le nom en français si disponible, sinon le nom en anglais
 
 # Fonction pour traiter une image et effectuer une détection
-def process_image(image_path, model, target_objects, output_dir="outputs"):
+def process_image(image_path, model, target_objects, target_phrase, output_dir="outputs"):
+    ensure_output_directory_exists(output_dir="outputs")
+
     image = cv2.imread(image_path)
     output_image_path = os.path.join(output_dir, f"processed_{os.path.basename(image_path)}")
 
@@ -98,9 +67,12 @@ def process_image(image_path, model, target_objects, output_dir="outputs"):
                 cv2.putText(image, text_to_display, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
     cv2.imwrite(output_image_path, image)
+    return output_image_path
+
 
 # Fonction pour traiter une vidéo et effectuer une détection
-def process_video(video_path, model, target_objects, output_dir="outputs"):
+def process_video(video_path, model, target_objects, target_phrase, output_dir="outputs"):
+    ensure_output_directory_exists(output_dir="outputs")
     cap = cv2.VideoCapture(video_path)
     output_video_path = os.path.join(output_dir, f"processed_{os.path.basename(video_path)}")
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
@@ -134,6 +106,8 @@ def process_video(video_path, model, target_objects, output_dir="outputs"):
     cap.release()
     out.release()
     cv2.destroyAllWindows()
+
+    return output_video_path
 
 # Fonction pour traiter un GIF et effectuer une détection
 def process_gif(gif_path, model, target_objects, output_dir="outputs"):
