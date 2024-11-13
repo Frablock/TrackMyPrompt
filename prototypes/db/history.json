@@ -1,0 +1,45 @@
+{
+    "history": [
+        {
+            "prompt": [
+                "mario",
+                "luigi",
+                "peach",
+                "yoshi",
+                "toad",
+                "bowser"
+            ],
+            "type": "Image",
+            "result": [
+                "Mario"
+            ],
+            "picture": "mario8574.png",
+            "favorite":false
+        },
+        {
+            "prompt": [
+                "Iris",
+                "Tulip",
+                "Orchid"
+            ],
+            "type": "Video",
+            "result": [
+                "Tulip"
+            ],
+            "picture": "orchid2249.png",
+            "favorite":false
+        },
+        {
+            "prompt": [
+                "Sunflower",
+                "Rose"
+            ],
+            "type": "Image",
+            "result": [
+                "Sunflower"
+            ],
+            "picture": "sunflower1234.png",
+            "favorite":false
+        }
+    ]
+}

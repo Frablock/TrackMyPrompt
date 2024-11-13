@@ -1,0 +1,77 @@
+{
+    "pallets": [
+        {
+            "name": "Night_Blue",
+            "bar_color": "#282655",
+            "bg_color": "#383584",
+            "icon_color": "#d62828",
+            "writing1": "#d4e6f5",
+            "writing2": "#ffffff",
+            "secured": true
+        },
+        {
+            "name": "Heartgold_Yellow",
+            "bar_color": "#e5c65b",
+            "bg_color": "#ffe486",
+            "icon_color": "#0094ff",
+            "writing1": "#4a4a4a",
+            "writing2": "#4a4a4a",
+            "secured": true
+        },
+        {
+            "name": "Cherry_Purple",
+            "bar_color": "#5e003a",
+            "bg_color": "#702353",
+            "icon_color": "#ff66c4",
+            "writing1": "#ff66c4",
+            "writing2": "#ff66c4",
+            "secured": true
+        },
+        {
+            "name": "Day_Blue",
+            "bar_color": "#ebfaff",
+            "bg_color": "#90e5ff",
+            "icon_color": "#005e96",
+            "writing1": "#005e96",
+            "writing2": "#005e96",
+            "secured": true
+        },
+        {
+            "name": "Azure_Beige",
+            "bar_color": "#f6e0c9",
+            "bg_color": "#eaefff",
+            "icon_color": "#7a6045",
+            "writing1": "#7a6045",
+            "writing2": "#005e96",
+            "secured": true
+        },
+        {
+            "name": "Cloud_White",
+            "bar_color": "#e1fffa",
+            "bg_color": "#ffffff",
+            "icon_color": "#51706b",
+            "writing1": "#737373",
+            "writing2": "#000000",
+            "secured": true
+        },
+        {
+            "name": "Pastel_Violet",
+            "bar_color": "#ebd9fc",
+            "bg_color": "#fbfaff",
+            "icon_color": "#9667e0",
+            "writing1": "#4a4a4a",
+            "writing2": "#000000",
+            "secured": true
+        },
+        {
+            "name": "Magma_Black",
+            "bar_color": "#000000",
+            "bg_color": "#282020",
+            "icon_color": "#d62828",
+            "writing1": "#b5b5b5",
+            "writing2": "#ffffff",
+            "secured": true
+        }
+    ],
+    "current_pallet": "Magma_Black"
+}
