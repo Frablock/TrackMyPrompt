@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>812</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGraphicsView#background {
+	background-color: rgb(40, 32, 32);
+	border: rgb(40, 32, 32);
+}
+
+QGraphicsView#topbar {
+	background-color: rgb(30, 22, 22);
+	border: rgb(30, 22, 22);
+}
+
+QGraphicsView#window {
+	background-color: rgb(30, 22, 22);
+	border: rgb(30, 22, 22);
+	border-radius: 20px;
+}
+
+QLineEdit {
+	background-color: rgb(30, 22, 22);
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid white;
+}
+QLineEdit:focus {
+    background-color: rgb(181, 181, 181);
+	color: rgb(255, 255, 255);
+}
+QLineEdit:hover {
+	background-color: rgb(60, 52, 52);
+	color: rgb(255, 255, 255);
+}
+
+QLabel {
+	color: rgb(255, 255, 255);
+	font: 9pt &quot;Arial&quot;;
+}
+
+QLabel#status_label {
+	color: rgb(254, 0, 0);
+	font: 9pt &quot;Arial&quot;;
+}
+
+QCheckBox {
+	color: rgb(255, 255, 255);
+	font: 9pt &quot;Arial&quot;;
+}
+
+QPushButton {
+    background-color: rgb(40, 32, 32);
+    color: white;               /* Texte blanc */
+	border-radius: 10px;
+    border: 2px solid red;
+    padding: 10px 20px;         /* Ajoute de l'espace autour du texte */
+    font-size: 16px;            /* Taille du texte */
+	font: 9pt &quot;Arial&quot;;
+}
+
+QPushButton#sign_in_button {
+	background-color: none;
+	border: none;
+	color: white;
+}
+
+QPushButton:hover {
+	background-color: rgb(60, 52, 52);
+}
+
+QPushButton:hover#sign_in_button {
+	color: red;
+}
+
+QPushButton:pressed {
+    background-color: rgb(234, 60, 60);
+}
+
+QPushButton:pressed#sign_in_button {
+    color: rgb(255, 148, 148);
+}
+
+QPushButton:disabled {
+    background-color: #C0C0C0;  /* Couleur grisée lorsque désactivé */
+    color: #F0F0F0;             /* Texte un peu plus clair quand désactivé */
+}
+
+QOpenGLWidget {
+	background-color: rgb(40, 32, 32);
+	border-radius: 10px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-30</y>
+      <width>811</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background {
+rgb(40, 32, 32)
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titre">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>811</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Log in&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="username">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>190</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Username&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="usernameEdit">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>220</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="topbar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>811</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGraphicsView {
+	color: rgb(30, 22, 22);
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="submitButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>460</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Submit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sign_in_button">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>510</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Not registered yet ? Sign in</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="window">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>100</y>
+      <width>401</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>150</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="password">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>280</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Password&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordEdit">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>310</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status_label">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>160</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>window</zorder>
+   <zorder>titre</zorder>
+   <zorder>username</zorder>
+   <zorder>usernameEdit</zorder>
+   <zorder>topbar</zorder>
+   <zorder>submitButton</zorder>
+   <zorder>sign_in_button</zorder>
+   <zorder>line</zorder>
+   <zorder>password</zorder>
+   <zorder>passwordEdit</zorder>
+   <zorder>status_label</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

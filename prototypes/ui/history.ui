@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>812</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGraphicsView#background {
+	background-color: rgb(30, 22, 22);
+	border: rgb(30, 22, 22);
+}
+
+QGraphicsView#topbar {
+	background-color: rgb(30, 22, 22);
+	border: rgb(30, 22, 22);
+}
+
+QGraphicsView#window {
+	background-color: rgb(30, 22, 22);
+	border: rgb(30, 22, 22);
+	border-radius: 20px;
+}
+
+QTableView {
+	background-color: rgb(40, 32, 32);
+	border: rgb(40, 32, 32);
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	
+}
+
+QLineEdit {
+	background-color: rgb(30, 22, 22);
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	padding: 5px;
+	border:None;
+}
+
+QLineEdit:focus {
+	background-color: rgb(60, 52, 52);
+	color: rgb(255, 255, 255);
+}
+
+QLineEdit:hover {
+	background-color: rgb(60, 52, 52);
+	color: rgb(255, 255, 255);
+}
+
+QLabel {
+	color: rgb(255, 255, 255);
+	font: 9pt &quot;Arial&quot;;
+}
+
+QLabel#status_label {
+	color: rgb(254, 0, 0);
+	font: 9pt &quot;Arial&quot;;
+}
+
+QCheckBox {
+	color: rgb(255, 255, 255);
+	font: 9pt &quot;Arial&quot;;
+}
+
+QPushButton {
+    background-color: rgb(40, 32, 32);
+    color: white;               /* Texte blanc */
+	border-radius: 10px;
+    border: 2px solid red;
+    padding: 10px 20px;         /* Ajoute de l'espace autour du texte */
+    font-size: 16px;            /* Taille du texte */
+	font: 9pt &quot;Arial&quot;;
+}
+
+QPushButton#sign_in_button {
+	background-color: none;
+	border: none;
+	color: white;
+}
+
+QPushButton:hover {
+	background-color: rgb(60, 52, 52);
+}
+
+QPushButton:hover#sign_in_button {
+	color: red;
+}
+
+QPushButton:pressed {
+    background-color: rgb(234, 60, 60);
+}
+
+QPushButton:pressed#sign_in_button {
+    color: rgb(255, 148, 148);
+}
+
+QPushButton:disabled {
+    background-color: #C0C0C0;  /* Couleur grisée lorsque désactivé */
+    color: #F0F0F0;             /* Texte un peu plus clair quand désactivé */
+}
+
+QOpenGLWidget {
+	background-color: rgb(40, 32, 32);
+	border-radius: 10px;
+}
+
+QToolButton {
+	background-color: rgb(30, 22, 22);
+}
+
+QToolButton:hover {
+	background-color: rgb(60, 52, 52);
+}
+
+QToolButton:pressed {
+    background-color: rgb(90, 82, 82);
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-30</y>
+      <width>811</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::CustomContextMenu</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background {
+rgb(40, 32, 32)
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="usernameEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>721</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Rechercher un historique...</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="topbar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>811</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGraphicsView {
+	color: rgb(30, 22, 22);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status_label">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>160</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>0</y>
+      <width>91</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="locale">
+     <locale language="French" country="France"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="main_qrc.qrc">
+      <normaloff>:/Burger.png</normaloff>:/Burger.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>70</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="popupMode">
+     <enum>QToolButton::InstantPopup</enum>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonIconOnly</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>120</y>
+      <width>651</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>topbar</zorder>
+   <zorder>usernameEdit</zorder>
+   <zorder>status_label</zorder>
+   <zorder>toolButton</zorder>
+   <zorder>tableView</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="main_qrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
